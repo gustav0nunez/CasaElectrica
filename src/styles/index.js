@@ -1,5 +1,5 @@
 import {StyleSheet} from "react-native"
-import Boton from "../components/Boton"
+
 
 
 export const styles = StyleSheet.create({

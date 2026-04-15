@@ -20,7 +20,7 @@ reducers: {
     
     state[habitacion] = !state[habitacion];
 
-    // 2. Actualizamos el consumo
+    
     if (state[habitacion]) {
       state.consumo += 10; 
     } else {

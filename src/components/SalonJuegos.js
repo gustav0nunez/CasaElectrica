@@ -3,14 +3,14 @@ import { View, Text } from 'react-native';
 import { useSelector } from 'react-redux';
 import { styles } from '../styles/index'; 
 
-const Cocina = () => {
+const SalaJuegos = () => {
  
-  const isEnchufada = useSelector((state) => state.casa.cocina);
+  const isEnchufada = useSelector((state) => state.casa.SalaJuegos);
 
   return (
     
     <View style={[styles.hab, { backgroundColor: isEnchufada ? 'green' : 'red' }]}>
-      <Text style={styles.texto}>Cocina</Text>
+      <Text style={styles.texto}>Sala Juegos</Text>
     </View>
   );
 };
