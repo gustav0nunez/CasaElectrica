@@ -15,4 +15,4 @@ const Sala = () => {
   );
 };
 
-export default Cocina;
+export default Sala;

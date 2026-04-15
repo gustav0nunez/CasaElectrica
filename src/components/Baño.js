@@ -5,7 +5,7 @@ import { styles } from '../styles/index';
 
 const Baño = () => {
  
-  const isEnchufada = useSelector((state) => state.casa.cocina);
+  const isEnchufada = useSelector((state) => state.casa.baño);
 
   return (
     

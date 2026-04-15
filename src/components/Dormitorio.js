@@ -5,7 +5,7 @@ import { styles } from '../styles/index';
 
 const Dormitorio = () => {
  
-  const isEnchufada = useSelector((state) => state.casa.cocina);
+  const isEnchufada = useSelector((state) => state.casa.dormitorio);
 
   return (
     
@@ -15,4 +15,4 @@ const Dormitorio = () => {
   );
 };
 
-export default Cocina;
+export default Dormitorio;

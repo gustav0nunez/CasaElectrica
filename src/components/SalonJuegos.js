@@ -15,4 +15,4 @@ const SalaJuegos = () => {
   );
 };
 
-export default Cocina;
+export default SalaJuegos;
