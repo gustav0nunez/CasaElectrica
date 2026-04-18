@@ -12,26 +12,4 @@ export default function App() {
   );
 }
 
-function casa() {
-  return (
-    <View style={styles.container}>
-      
-      
-      <View style={styles.panelControl}>
-        <Text>Panel de Botones</Text>
-      </View>
-
-      
-      <View style={styles.habitaciones}>
-        <Text>Las 6 habitaciones irán aquí</Text>
-      </View>
-
-      
-      <View style={styles.consumo}>
-        <Text>Barra de Consumo</Text>
-      </View>
-
-    </View>
-  );
-}
 

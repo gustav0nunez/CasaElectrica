@@ -9,10 +9,10 @@ export const PanelControl = () => {
     <View styles = {styles.panelControl}>
         <Boton habitacion="cocina"></Boton>
         <Boton habitacion="sala"></Boton>
-        <Boton habitacion="dormitorio1"></Boton>
+        <Boton habitacion="dormitorio"></Boton>
         <Boton habitacion= "dormitorio2"></Boton>
         <Boton habitacion="baño"></Boton>
-        <Boton habitacion="salonJuegos"></Boton>
+        <Boton habitacion="salaJuegos"></Boton>
         <Boton></Boton>
     </View>
   )

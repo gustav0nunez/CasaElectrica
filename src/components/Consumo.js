@@ -11,7 +11,7 @@ const Consumo = () => {
 
   return (
     <View style={styles.consumo}>
-        <View style={{flexDirection: "row", backgroundColor: "red", height: 30, width: "100%", borderRadius: 5}}/>
+        <View style={{flexDirection: "row", backgroundColor: "red", height: altoBarra, width: "100%", borderRadius: 5}}/>
 
       <Text style={[styles.texto, { fontSize: 14 }]}>{consumo}W</Text>
         </View>
