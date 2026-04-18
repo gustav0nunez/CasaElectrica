@@ -15,4 +15,4 @@ const Baño = () => {
   );
 };
 
-export default Cocina;
+export default Baño;

@@ -3,10 +3,10 @@ import { createSlice } from "@reduxjs/toolkit";
 const initialState = {
     cocina: false,
     sala: false,
-    dormitorio1: false,
+    dormitorio: false,
     dormitorio2: false,
     baño: false,
-    salonJuegos: false,
+    salaJuegos: false,
     consumo: 0,
     termicaSaltada: false,
 };

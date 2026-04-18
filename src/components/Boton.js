@@ -16,11 +16,11 @@ const Boton = ({ habitacion }) => {
 
   return (
     <TouchableOpacity 
-      style={styles.boton} 
-      onPress={() => dispatch(toggleLuz(habitacion))}
-    >
-      <Text style={{color: 'white', fontSize: 10}}>{habitacion}</Text>
-    </TouchableOpacity>
+  style={[styles.boton, { opacity: termicaSaltada ? 0.5 : 1 }]} 
+  onPress={manejarPresion} 
+>
+  <Text style={{color: 'white', fontSize: 10}}>{habitacion}</Text>
+</TouchableOpacity>
   );
 };
 
