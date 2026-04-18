@@ -2,16 +2,17 @@ import React from 'react'
 import {Text, View} from "react-native"
 import { styles } from '../styles'
 import Boton from './Boton'
+import Cocina from './Cocina'
 
 export const PanelControl = () => {
   return (
     <View styles = {styles.panelControl}>
-        <Boton></Boton>
-        <Boton></Boton>
-        <Boton></Boton>
-        <Boton></Boton>
-        <Boton></Boton>
-        <Boton></Boton>
+        <Boton habitacion="cocina"></Boton>
+        <Boton habitacion="sala"></Boton>
+        <Boton habitacion="dormitorio"></Boton>
+        <Boton habitacion= "dormitorio2"></Boton>
+        <Boton habitacion="baño"></Boton>
+        <Boton habitacion="salonJuegos"></Boton>
         <Boton></Boton>
     </View>
   )

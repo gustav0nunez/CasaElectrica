@@ -1,11 +1,18 @@
 import React from 'react';
 import { TouchableOpacity, Text } from 'react-native';
-import { useDispatch } from 'react-redux';
+import { useDispatch, useSelector } from 'react-redux';
 import { toggleLuz } from '../redux/casaSlice';
 import { styles } from '../styles';
 
 const Boton = ({ habitacion }) => {
   const dispatch = useDispatch();
+  const { termicaSaltada } = useSelector((state) => state.casa);
+
+  const manejarPresion = () => {
+    if (!termicaSaltada) {
+      dispatch(toggleLuz(habitacion));
+    }
+  };
 
   return (
     <TouchableOpacity 

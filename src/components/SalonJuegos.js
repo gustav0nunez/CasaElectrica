@@ -5,7 +5,7 @@ import { styles } from '../styles/index';
 
 const SalaJuegos = () => {
  
-  const isEnchufada = useSelector((state) => state.casa.SalaJuegos);
+  const isEnchufada = useSelector((state) => state.casa.salaJuegos);
 
   return (
     

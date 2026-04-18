@@ -19,6 +19,7 @@ const Casa = () => {
            
             <View style={[styles.panelControl, { width: '20%', height: '100%', flexDirection: 'column' }]}>
                 <Text style={styles.texto}>Panel</Text>
+                <PanelControl/> 
             </View>
 
            
