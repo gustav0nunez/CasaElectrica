@@ -3,50 +3,54 @@ import {StyleSheet} from "react-native"
 
 
 export const styles = StyleSheet.create({
-container: {
+    container: {
         flex: 1,
         flexDirection: "row", 
+        backgroundColor: '#121212',
+    },
+    panelControl: {
+        width: '15%', 
+        backgroundColor: "#1f2937",
+        paddingVertical: 10,
+        alignItems: "center",
+        borderRightWidth: 1,
+        borderRightColor: '#374151'
     },
     habitacionesContainer: {
-        flex: 3, 
+        flex: 1, 
         flexDirection: "row",
         flexWrap: "wrap",
         justifyContent: "space-around",
-        padding: 10
+        alignContent: "center",
+        padding: 10,
     },
-
     hab: {
-
-    width: "45%",
-    height: 200,
-    backgroundColor: "red",
-    margin: 10,
-    padding: 15
-    },
-    panelControl: {
-        width: "100%",
-        height: 70,
-        backgroundColor: "blue",
-        flexDirection: "row",
-        justifyContent: "center",
-        alignItems: "center"
+        width: "30%", 
+        height: '40%', 
+        margin: 10,
+        justifyContent: 'center',
+        alignItems: 'center',
+        borderRadius: 15,
+        elevation: 5, 
     },
     consumo: {
-        width: "100%",
-        height: 70,
-        backgroundColor: "green",
-        flexDirection: "row",
-        alignItems: "center"
+        width: '12%',
+        alignItems: "center",
+        justifyContent: 'flex-end',
     },
     texto: {
         color: "white",
-        fontSize: 20,
-        fontWeight: "bold"
+        fontSize: 14,
+        fontWeight: "bold",
+        textAlign: 'center'
     },
     boton: {
-        width: 40,
-        height: 25,
-        backgroundColor: "red",
-        margin: 10
+        width: 60,
+        height: 35,
+        backgroundColor: "#e74c3c",
+        marginVertical: 10,
+        justifyContent: 'center',
+        alignItems: 'center',
+        borderRadius: 5,
     }
-})
+});

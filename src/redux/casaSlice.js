@@ -15,7 +15,7 @@ export const casaSlice = createSlice({
     name: "casa",
     initialState,
 reducers: {
-  toggleLuz: (state, action) => {
+ toggleLuz: (state, action) => {
     const habitacion = action.payload; 
     
     state[habitacion] = !state[habitacion];
@@ -30,10 +30,23 @@ reducers: {
     if (state.consumo > 50) {
     state.termicaSaltada = true;
   }
-  }
+  },
+
+  
+resetTermica: (state) => {
+  state.consumo = 0;
+  state.termicaSaltada = false;
+  state.cocina = false;
+  state.baño = false;
+  state.sala = false;
+  state.dormitorio = false;
+  state.dormitorio2 = false;
+  state.salaJuegos = false;
+},
 }
 
 })
-export const { toggleLuz } = casaSlice.actions;
+
+export const { toggleLuz, resetTermica } = casaSlice.actions;
 
 export default casaSlice.reducer; 

@@ -5,21 +5,43 @@ import { useSelector } from 'react-redux'
 
 
 const Consumo = () => {
-
-  const {consumo} = useSelector((state) => state.casa);
-  const altoBarra = consumo * 4;
+  const { consumo, termicaSaltada } = useSelector((state) => state.casa);
+  const altoBarra = (consumo / 100) * 100 + "%";
 
   return (
-    <View style={[styles.consumo, { flexDirection: "column-reverse", height: 250 }]}>
+    <View style={{ flex: 1, alignItems: 'center', justifyContent: 'center', paddingVertical: 20 }}>
+   
+      <View style={{
+        height: '80%',
+        width: 30,
+        backgroundColor: '#1e293b',
+        borderRadius: 15,
+        overflow: 'hidden',
+        justifyContent: 'flex-end',
+        borderWidth: 1,
+        borderColor: '#475569'
+      }}>
+        
         <View style={{
-            backgroundColor: "red", 
-            height: altoBarra, // Ahora sí se verá crecer
-            width: "100%", 
-            borderRadius: 5
-        }}/>
-        <Text style={[styles.texto, { fontSize: 14 }]}>{consumo}W</Text>
+          height: altoBarra,
+          width: '100%',
+          backgroundColor: termicaSaltada ? '#ef4444' : '#22c55e',
+        }} />
+      </View>
+
+      
+      <View style={{ marginTop: 10, alignItems: 'center' }}>
+        <Text style={{ color: 'white', fontSize: 10 }}>WATTS</Text>
+        <Text style={{ color: termicaSaltada ? '#ef4444' : '#22c55e', fontSize: 18, fontWeight: 'bold' }}>
+          {consumo}
+        </Text>
+      </View>
+      
+      {termicaSaltada && (
+        <Text style={{ color: '#ef4444', fontSize: 8, fontWeight: 'bold', marginTop: 5 }}>SALTÓ!</Text>
+      )}
     </View>
-  )
-}
+  );
+};
 
 export default Consumo

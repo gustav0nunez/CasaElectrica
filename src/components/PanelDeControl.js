@@ -2,18 +2,18 @@ import React from 'react'
 import {Text, View} from "react-native"
 import { styles } from '../styles'
 import Boton from './Boton'
-import Cocina from './Cocina'
+import {resetTermica} from "../redux/casaSlice"
 
 export const PanelControl = () => {
   return (
-    <View styles = {styles.panelControl}>
+    <View style={styles.panelControl}>
         <Boton habitacion="cocina"></Boton>
         <Boton habitacion="sala"></Boton>
         <Boton habitacion="dormitorio"></Boton>
-        <Boton habitacion= "dormitorio2"></Boton>
+        <Boton habitacion="dormitorio2"></Boton>
         <Boton habitacion="baño"></Boton>
         <Boton habitacion="salaJuegos"></Boton>
-        <Boton></Boton>
+        <Boton habitacion="REINICIAR" isReset={true}/>
     </View>
   )
 }
