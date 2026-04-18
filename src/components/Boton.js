@@ -1,7 +1,7 @@
 import React from 'react';
 import { TouchableOpacity, Text } from 'react-native';
 import { useDispatch, useSelector } from 'react-redux';
-import { toggleLuz } from '../redux/casaSlice';
+import { toggleLuz, resetTermica } from '../redux/casaSlice';
 import { styles } from '../styles';
 
 const Boton = ({ habitacion, isReset }) => {
@@ -20,7 +20,7 @@ const Boton = ({ habitacion, isReset }) => {
     <TouchableOpacity 
       style={[
         styles.boton, 
-        { backgroundColor: isReset ? '#2ecc71' : '#e74c3c' }, // Verde si es reset
+        { backgroundColor: isReset ? '#2ecc71' : '#e74c3c' }, 
         { opacity: !isReset && termicaSaltada ? 0.5 : 1 }
       ]} 
       onPress={manejarPresion}

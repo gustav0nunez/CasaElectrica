@@ -42,10 +42,10 @@ resetTermica: (state) => {
   state.dormitorio = false;
   state.dormitorio2 = false;
   state.salaJuegos = false;
-},
+}
 }
 
-})
+});
 
 export const { toggleLuz, resetTermica } = casaSlice.actions;
 
