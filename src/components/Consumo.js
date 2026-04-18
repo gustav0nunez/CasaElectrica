@@ -10,12 +10,14 @@ const Consumo = () => {
   const altoBarra = consumo * 4;
 
   return (
-    <View style={styles.consumo}>
-        <View style={{flexDirection: "row", backgroundColor: "red", height: altoBarra, width: "100%", borderRadius: 5}}/>
-
-      <Text style={[styles.texto, { fontSize: 14 }]}>{consumo}W</Text>
-        </View>
-
+    <View style={[styles.consumo, { flexDirection: "column-reverse", height: 250 }]}>
+        <View style={{
+            backgroundColor: "red", 
+            height: altoBarra, // Ahora sí se verá crecer
+            width: "100%", 
+            borderRadius: 5
+        }}/>
+        <Text style={[styles.texto, { fontSize: 14 }]}>{consumo}W</Text>
     </View>
   )
 }

@@ -9,7 +9,7 @@ import Dormitorio from "./Dormitorio";
 import Dormitorio2 from "./Dormitorio2";
 import PanelControl from "./PanelDeControl";
 import Sala from "./Sala";
-import SalaJuegos from "./SalonJuegos";
+import SalaJuegos from "./SalaJuegos";
 
 const Casa = () => {
     const { consumo } = useSelector((state) => state.casa);
