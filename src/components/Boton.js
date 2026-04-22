@@ -10,7 +10,7 @@ const Boton = ({ habitacion, isReset }) => {
 
   const manejarPresion = () => {
     if (isReset) {
-      dispatch(resetTermica()); // Esta acción siempre funciona
+      dispatch(resetTermica()); 
     } else if (!termicaSaltada) {
       dispatch(toggleLuz(habitacion));
     }

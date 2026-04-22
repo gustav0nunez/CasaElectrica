@@ -1,5 +1,5 @@
 import React from "react"; 
-import { View, Text } from "react-native";
+import { View, Text, SafeAreaView } from "react-native";
 import { useSelector } from "react-redux";
 import { styles } from '../styles/index';
 import Cocina from "./Cocina";
@@ -13,7 +13,7 @@ import SalaJuegos from "./SalaJuegos";
 
 const Casa = () => {
   return (
-    <View style={styles.container}>
+    <SafeAreaView style={[styles.container, { backgroundColor: '#111827' }]}>
      
       <View style={styles.panelControl}>
         <Text style={styles.texto}>PANEL</Text>
@@ -34,7 +34,7 @@ const Casa = () => {
       <View style={styles.consumo}>
         <Consumo />
       </View>
-    </View>
+    </SafeAreaView>
   );
 };
 

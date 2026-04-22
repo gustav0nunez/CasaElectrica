@@ -5,17 +5,17 @@ import {StyleSheet} from "react-native"
 export const styles = StyleSheet.create({
     container: {
         flex: 1,
-        flexDirection: "row", 
-        backgroundColor: '#121212',
+        flexDirection: "row",
+        backgroundColor: '#1f2937', 
     },
     panelControl: {
-        width: '15%', 
-        backgroundColor: "#1f2937",
-        paddingVertical: 10,
-        alignItems: "center",
-        borderRightWidth: 1,
-        borderRightColor: '#374151'
-    },
+    width: '22%',           
+    height: '100%',
+    backgroundColor: "#111827", 
+    paddingVertical: 10,    
+    alignItems: "center",
+    justifyContent: "center", 
+},
     habitacionesContainer: {
         flex: 1, 
         flexDirection: "row",
@@ -34,10 +34,11 @@ export const styles = StyleSheet.create({
         elevation: 5, 
     },
     consumo: {
-        width: '12%',
-        alignItems: "center",
-        justifyContent: 'flex-end',
-    },
+    width: '15%',
+    height: '100%',
+    alignItems: "center",
+    justifyContent: "center",
+},
     texto: {
         color: "white",
         fontSize: 14,
@@ -45,12 +46,12 @@ export const styles = StyleSheet.create({
         textAlign: 'center'
     },
     boton: {
-        width: 60,
-        height: 35,
-        backgroundColor: "#e74c3c",
-        marginVertical: 10,
-        justifyContent: 'center',
-        alignItems: 'center',
-        borderRadius: 5,
-    }
+    width: '90%',
+    height: 35,             
+    marginVertical: 4,      
+    justifyContent: 'center',
+    alignItems: 'center',
+    borderRadius: 8,
+    backgroundColor: "#374151",
+}
 });
