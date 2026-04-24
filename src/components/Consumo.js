@@ -6,18 +6,21 @@ import { styles } from '../styles'
 const Consumo = () => {
   const { consumo, termicaSaltada } = useSelector((state) => state.casa);
   
+ 
   const porcentajeCarga = `${Math.min((consumo / 50) * 100, 100)}%`; 
 
   return (
-    <View style={{ flex: 1, alignItems: 'center', justifyContent: 'center' }}>
+    
+    <View style={{ alignItems: 'center', justifyContent: 'center', width: '100%' }}>
+        
         <View style={{
-            height: '70%', 
-            width: 30,
+            height: '65%', 
+            width: 20,     
             backgroundColor: '#1f2937',
-            borderRadius: 15,
+            borderRadius: 10,
             overflow: 'hidden',
             justifyContent: 'flex-end', 
-            borderWidth: 2,
+            borderWidth: 1,
             borderColor: termicaSaltada ? '#ef4444' : '#374151',
         }}>
             
@@ -29,16 +32,15 @@ const Consumo = () => {
         </View>
 
         
-        <View style={{ alignItems: 'center', marginTop: 10, height: 40 }}>
-            <Text style={[styles.texto, { fontSize: 16 }]}>{consumo}W</Text>
+        <View style={{ alignItems: 'center', marginTop: 8 }}>
+            <Text style={[styles.texto, { fontSize: 12 }]}>{consumo}W</Text>
             
             {termicaSaltada && (
                 <Text style={{ 
                     color: '#ef4444', 
-                    fontSize: 10, 
+                    fontSize: 8, 
                     fontWeight: 'bold',
-                    position: 'absolute', 
-                    bottom: -15 
+                    marginTop: 2
                 }}>
                     ¡SALTÓ!
                 </Text>

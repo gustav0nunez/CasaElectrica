@@ -1,69 +1,58 @@
-import {StyleSheet} from "react-native"
-
-
+import { StyleSheet } from "react-native"
 
 export const styles = StyleSheet.create({
     container: {
         flex: 1,
-        flexDirection: "row",
-        backgroundColor: '#1f2937', 
+        flexDirection: "row", 
+        backgroundColor: '#111827', 
     },
     panelControl: {
-    width: '22%',           
-    height: '100%',
-    backgroundColor: "#111827", 
-    paddingVertical: 10,    
+    flex: 2,             
+    backgroundColor: "#0f172a", 
     alignItems: "center",
     justifyContent: "center", 
+    borderRightWidth: 1,
+    borderRightColor: '#1e293b'
 },
-    habitacionesContainer: {
-    flex: 6, 
+habitacionesContainer: {
+    flex: 8.4,             
     flexDirection: "row",
     flexWrap: "wrap",
-    justifyContent: "center", 
+    justifyContent: "space-evenly", 
     alignContent: "center", 
-    padding: 10, 
+    alignItems: "center",
+    padding: 10,
 },
-    hab: {
-        width: "45%",        
-    aspectRatio: 1.2,      
-    margin: 8,          
+consumo: {
+    flex: 0.8,               
+    alignItems: "center",     
+    justifyContent: "center",  
+    backgroundColor: "#0f172a",
+    borderLeftWidth: 1,
+    borderLeftColor: '#1e293b'
+},
+hab: {
+    width: "28%",          
+    aspectRatio: 1.0,      
+    margin: 10,          
     justifyContent: 'center',
     alignItems: 'center',
-    borderRadius: 15,
-    elevation: 5,
-
-},  
-        
-        /*width: "42%", 
-        height: '40%', 
-        margin: 10,
-        justifyContent: 'center',
-        alignItems: 'center',
-        borderRadius: 15,
-        elevation: 5, */
-    
-    consumo: {
-
-    flex: 2,
-    width: '15%',
-    height: '100%',
-    alignItems: "center",
-    justifyContent: "center",
+    borderRadius: 12,
+    elevation: 5, 
 },
     texto: {
         color: "white",
-        fontSize: 14,
+        fontSize: 20,
         fontWeight: "bold",
         textAlign: 'center'
     },
     boton: {
     width: '90%',
-    height: 35,             
-    marginVertical: 4,      
+    height: 25,            
+    marginVertical: 2,      
     justifyContent: 'center',
     alignItems: 'center',
-    borderRadius: 8,
+    borderRadius: 4,
     backgroundColor: "#374151",
 }
 });

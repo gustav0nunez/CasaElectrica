@@ -13,11 +13,11 @@ import SalaJuegos from "./SalaJuegos";
 
 const Casa = () => {
     return (
-        <SafeAreaView style={[styles.container, { backgroundColor: '#111827' }]}>
-            <View style={styles.panelControl}>
-                <Text style={styles.texto}>PANEL</Text>
-                <PanelControl/> 
-            </View>
+        <SafeAreaView style={styles.container}>
+    <View style={styles.panelControl}>
+        
+        <PanelControl/> 
+    </View>
 
             <View style={styles.habitacionesContainer}>
                 <Cocina />
