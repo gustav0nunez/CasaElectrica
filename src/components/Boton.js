@@ -4,7 +4,7 @@ import { useDispatch, useSelector } from 'react-redux';
 import { toggleLuz, resetTermica } from '../redux/casaSlice';
 import { styles } from '../styles';
 
-const Boton = ({ habitacion, isReset }) => {
+const Boton = ({ habitacion, label, isReset }) => {
   const dispatch = useDispatch();
   const { termicaSaltada } = useSelector((state) => state.casa);
 
@@ -25,7 +25,7 @@ const Boton = ({ habitacion, isReset }) => {
       ]} 
       onPress={manejarPresion}
     >
-      <Text style={{color: 'white', fontSize: 10}}>{habitacion}</Text>
+      <Text style={{color: 'white', fontSize: 10}}>{label || habitacion}</Text>
     </TouchableOpacity>
   );
 };

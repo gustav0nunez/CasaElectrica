@@ -10,7 +10,7 @@ const Dormitorio2 = () => {
   return (
     
     <View style={[styles.hab, { backgroundColor: isEnchufada ? 'green' : 'red' }]}>
-      <Text style={styles.texto}>Doemitorio 2
+      <Text style={styles.texto}>Dormitorio 2
       </Text>
     </View>
   );

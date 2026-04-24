@@ -17,23 +17,35 @@ export const styles = StyleSheet.create({
     justifyContent: "center", 
 },
     habitacionesContainer: {
-        flex: 1, 
-        flexDirection: "row",
-        flexWrap: "wrap",
-        justifyContent: "space-around",
-        alignContent: "center",
-        padding: 10,
-    },
+    flex: 6, 
+    flexDirection: "row",
+    flexWrap: "wrap",
+    justifyContent: "center", 
+    alignContent: "center", 
+    padding: 10, 
+},
     hab: {
-        width: "30%", 
+        width: "45%",        
+    aspectRatio: 1.2,      
+    margin: 8,          
+    justifyContent: 'center',
+    alignItems: 'center',
+    borderRadius: 15,
+    elevation: 5,
+
+},  
+        
+        /*width: "42%", 
         height: '40%', 
         margin: 10,
         justifyContent: 'center',
         alignItems: 'center',
         borderRadius: 15,
-        elevation: 5, 
-    },
+        elevation: 5, */
+    
     consumo: {
+
+    flex: 2,
     width: '15%',
     height: '100%',
     alignItems: "center",
