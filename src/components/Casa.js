@@ -1,5 +1,5 @@
 import React from "react"; 
-import { View, Text, SafeAreaView } from "react-native";
+import { View, SafeAreaView } from "react-native";
 import { useSelector } from "react-redux";
 import { styles } from '../styles/index';
 import Cocina from "./Cocina";
