@@ -7,7 +7,7 @@ export const styles = StyleSheet.create({
         backgroundColor: '#111827', 
     },
     panelControl: {
-    flex: 2,             
+    flex: 1.5,             
     backgroundColor: "#0f172a", 
     alignItems: "center",
     justifyContent: "center", 

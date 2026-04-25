@@ -34,14 +34,7 @@ reducers: {
 
   
 resetTermica: (state) => {
-  state.consumo = 0;
-  state.termicaSaltada = false;
-  state.cocina = false;
-  state.baño = false;
-  state.sala = false;
-  state.dormitorio = false;
-  state.dormitorio2 = false;
-  state.salaJuegos = false;
+  return initialState;
 }
 }
 
